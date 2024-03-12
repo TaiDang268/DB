@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T04:45:18.034Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="RE2mjBERFES3Iw4rZDj1" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T06:34:16.367Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="C8S2yGtTZzeFeOZV4b_R" version="24.0.5" type="github">
   <diagram name="Trang-1" id="ghrP821aY5biAVzx7xRe">
     <mxGraphModel dx="1707" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,62 +8,59 @@
           <mxGeometry x="-179" y="25" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-43" value="TradingOpenApi" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="310" y="25" width="110" height="30" as="geometry" />
+          <mxGeometry x="460" y="18" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-44" value="RedisDB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="740" y="18" width="70" height="30" as="geometry" />
+        <mxCell id="k9Ez34xanpNrjzAvwohH-44" value="RedisDB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="18" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-45" value="OracleDB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="970" y="18" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-46" value="Nhập thông tin cổ phiếu mua/bán và click &quot;Xác nhân&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-259" y="267" width="165" height="74" as="geometry" />
+          <mxGeometry x="-259" y="280" width="165" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-49" value="&lt;br&gt;initVerifyTransaction: nhận data payload⇒ gọi đến genTransaction⇒ transactionId được tạo = custId+module+ time now+ randomUtils.uidLight(4)⇒ transactionID lưu ở redis&amp;nbsp;&lt;br&gt;&lt;div&gt;Khởi tạo xong=&amp;gt; gọi&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;transactionHelper.create để lưu ở redis&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillStyle=auto;gradientColor=none;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="410" y="180" width="240" height="160" as="geometry" />
+        <mxCell id="k9Ez34xanpNrjzAvwohH-49" value="" style="whiteSpace=wrap;html=1;fillStyle=auto;gradientColor=none;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="390" y="80" width="300" height="280" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-50" value="truy vấn" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="950" y="100" width="120" height="60" as="geometry" />
+          <mxGeometry x="940" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-51" value="precheckOrder: lấy thông tin từ req⇒ gọi đến thủ tục precheck_order(BPSFunkey) (service BPS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="110" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-52" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+        <mxCell id="k9Ez34xanpNrjzAvwohH-52" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.367;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k9Ez34xanpNrjzAvwohH-88">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="650" y="119.5" as="sourcePoint" />
-            <mxPoint x="900" y="120" as="targetPoint" />
+            <mxPoint x="689" y="119.5" as="sourcePoint" />
+            <mxPoint x="939" y="120" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="119.5" />
+              <mxPoint x="759" y="119.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-53" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="k9Ez34xanpNrjzAvwohH-53" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.833;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="k9Ez34xanpNrjzAvwohH-88">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="900" y="149" as="sourcePoint" />
-            <mxPoint x="650" y="149" as="targetPoint" />
+            <mxPoint x="939" y="149" as="sourcePoint" />
+            <mxPoint x="689" y="149" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="860" y="149" />
+              <mxPoint x="899" y="149" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-55" value="Save" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="730" y="230" width="120" height="60" as="geometry" />
+          <mxGeometry x="769" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-56" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+        <mxCell id="k9Ez34xanpNrjzAvwohH-56" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.958;exitY=0.438;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k9Ez34xanpNrjzAvwohH-87">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="660" y="250" as="sourcePoint" />
-            <mxPoint x="730" y="250" as="targetPoint" />
+            <mxPoint x="699" y="250" as="sourcePoint" />
+            <mxPoint x="769" y="250" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="730" y="250" />
+              <mxPoint x="769" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-58" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="k9Ez34xanpNrjzAvwohH-58" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.017;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="k9Ez34xanpNrjzAvwohH-87">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="730" y="280" as="sourcePoint" />
-            <mxPoint x="660" y="280" as="targetPoint" />
+            <mxPoint x="769" y="280" as="sourcePoint" />
+            <mxPoint x="699" y="280" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="730" y="280" />
+              <mxPoint x="769" y="280" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -94,7 +91,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-66" value="trả về token, data user để gắn vào req" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="k9Ez34xanpNrjzAvwohH-66" value="trả về&amp;nbsp; data user, token để gắn vào req" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-160" y="148" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-67" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.383;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k9Ez34xanpNrjzAvwohH-62">
@@ -108,27 +105,120 @@
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-69" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-94" y="277" as="sourcePoint" />
-            <mxPoint x="176" y="277" as="targetPoint" />
+            <mxPoint x="-80" y="280" as="sourcePoint" />
+            <mxPoint x="190" y="280" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="176" y="277" />
+              <mxPoint x="190" y="280" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k9Ez34xanpNrjzAvwohH-70" value="Lấy header của req để auth .ok=&amp;gt; next()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="180" width="120" height="60" as="geometry" />
+        <mxCell id="k9Ez34xanpNrjzAvwohH-70" value="Lấy header của req để auth =&amp;gt;ok =&amp;gt; next()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="230" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-71" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="320" y="200" as="sourcePoint" />
-            <mxPoint x="390" y="200" as="targetPoint" />
+            <mxPoint x="315" y="259.58" as="sourcePoint" />
+            <mxPoint x="385" y="259.58" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="390" y="200" />
+              <mxPoint x="385" y="259.58" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="k9Ez34xanpNrjzAvwohH-72" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="335" y="178" width="30" height="30" as="geometry" />
+          <mxGeometry x="335" y="230" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-76" value="Policies" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-79" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="290" as="sourcePoint" />
+            <mxPoint x="-70" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-106" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k9Ez34xanpNrjzAvwohH-79">
+          <mxGeometry x="-0.8267" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-80" value="unauthorization" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="65" y="338" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-82" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="-70" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-83" value="Nhập mã PIN xác thực" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="440" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-87" value="&lt;br&gt;initVerifyTransaction: nhận data payload⇒ gọi đến genTransaction⇒ transactionId được tạo = custId+module+ time now+ randomUtils.uidLight(4)⇒ transactionID lưu ở redis&amp;nbsp;&lt;br&gt;&lt;div&gt;Khởi tạo xong=&amp;gt; gọi&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;transactionHelper.create để lưu ở redis&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillStyle=auto;gradientColor=none;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-88" value="precheckOrder: lấy thông tin từ req⇒ gọi đến thủ tục precheck_order(BPSFunkey) (service BPS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-96" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-120" y="509" as="sourcePoint" />
+            <mxPoint x="150" y="509" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="509" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-97" value="Lấy header của req để auth =&amp;gt;ok =&amp;gt; next()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-98" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="509.5" as="sourcePoint" />
+            <mxPoint x="390" y="509.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="509.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-100" value="api order: lấy payload (data, transactionId, tokenId,…) ⇒ gọi đến thủ tục BPSFunckey.CREATE_ORDERS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="480" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-101" value="Create order" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-103" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="700" y="520" as="sourcePoint" />
+            <mxPoint x="910" y="519.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="910" y="519.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-107" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k9Ez34xanpNrjzAvwohH-103">
+          <mxGeometry x="-0.1048" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-108" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="550" as="sourcePoint" />
+            <mxPoint x="-130" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9Ez34xanpNrjzAvwohH-109" value="N(PIN sai)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k9Ez34xanpNrjzAvwohH-108">
+          <mxGeometry x="-0.8356" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
